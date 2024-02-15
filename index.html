@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>To-Do List</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<script src="listManager.js"></script>
+	</head>
+	<body>
+		<h1>To-Do List</h1>
+		<div id = "top">
+			<input type="text" placeholder="Input Task Here" 
+			id="input" onkeydown="inputKey(event)"></input>
+			<button onclick="newTask(document.getElementById('input').value)">
+				Add to list
+			</button>
+		</div>
+		<div id="taskList">
+		</div>
+		<button id="bottom" onclick="deleteAll(document.getElementById('taskList').children)">Clear List</button>
+	</body>
+</html
